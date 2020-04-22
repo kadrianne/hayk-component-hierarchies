@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import data from './data'
+import Header from './components/Header'
 
 import "./App.css"
 
@@ -8,32 +9,7 @@ export default class App extends Component {
     render(){
         return (
              <div class="App">
-               <header>
-                  <div class="primary-navigation">
-                     <span id="logo"><a href="https://google.com"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google logo" /></a></span>
-                     <form class="search-input"><input type="text" name="searchText" /><i class="fa fa-search"></i></form>
-                     <nav class="user-navigation">
-                        <ul>
-                           <li class="apps"><a href="#"><i class="fa fa-th"></i></a></li>
-                           <li class="profile"><a href="#"><img src="https://lh3.googleusercontent.com/-W85Kft4LxYk/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfuaNPMpoEmUvu4WR_lx0wXeH32pg.CMID/s64-c/photo.jpg" alt="Profile" /></a></li>
-                        </ul>
-                     </nav>
-                  </div>
-                  <nav class="secondary-navigation">
-                     <ul class="search-types">
-                        <li><a class="search-type active" href="#"><i class="fa fa-search"></i><span>All</span></a></li>
-                        <li><a class="search-type " href="#"><i class="fa fa-newspaper"></i><span>News</span></a></li>
-                        <li><a class="search-type " href="#"><i class="fa fa-map-marked"></i><span>Maps</span></a></li>
-                        <li><a class="search-type " href="#"><i class="fa fa-video"></i><span>Videos</span></a></li>
-                        <li><a class="search-type " href="#"><i class="fa fa-images"></i><span>Images</span></a></li>
-                        <li><a class="search-type " href="#"><i class="fa fa-ellipsis-v"></i><span>More</span></a></li>
-                     </ul>
-                     <ul class="configuration">
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Tools</a></li>
-                     </ul>
-                  </nav>
-               </header>
+               <Header />
                <main>
                   <section class="search-results">
                      <p class="totals">About 15500000 search results (0.76 seconds)</p>
