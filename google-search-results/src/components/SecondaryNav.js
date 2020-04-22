@@ -32,11 +32,11 @@ function SecondaryNav() {
     }
 
     return (
-        <nav class="secondary-navigation">
-            <ul class="search-types">
+        <nav className="secondary-navigation">
+            <ul className="search-types">
                 {mapLinks()}
             </ul>
-            <ul class="configuration">
+            <ul className="configuration">
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">Tools</a></li>
             </ul>

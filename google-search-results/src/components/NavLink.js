@@ -15,8 +15,8 @@ class NavLink extends React.Component {
         const {icon,text} = {...this.props}
         return (
             <li>
-                <a class={this.state.classes} href="#" onClick={this.activeLink}>
-                    <i class={icon}></i>
+                <a className={this.state.classes} href="#" onClick={this.activeLink}>
+                    <i className={icon}></i>
                     <span>{text}</span>
                 </a>
             </li>
